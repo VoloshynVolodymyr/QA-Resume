@@ -1,0 +1,36 @@
+<!-- https://www.youtube.com/watch?v=Us4n_3eUOxs -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Resume</title>
+    <link rel="stylesheet" href="./css/main.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Montserrat:100,200,300,regular,500,600,700,800,900,100italic,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic"
+      rel="stylesheet"
+    />
+    <link rel="icon" type="image/x-icon" href="./img/favicons/favicon.svg" />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="./img/favicons/apple-touch-icon.png"
+    />
+  </head>
+
+  <body>
+    @@include('blocks/header.html')
+
+    <main class="main">
+      @@include('blocks/hero.html') @@include('blocks/tools.html')
+      @@include('blocks/skills.html') @@include('blocks/education.html')
+      @@include('blocks/portfolio.html')
+      <!-- @@include('blocks/collection.html')
+      @@include('blocks/follow.html') -->
+    </main>
+    @@include('blocks/footer.html')
+    <!-- <script src="./../splide-4.1.3/dist/js/splide.min.js"></script> -->
+    <script src="./js/index.bundle.js"></script>
+  </body>
+</html>

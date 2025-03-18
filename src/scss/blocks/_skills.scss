@@ -1,0 +1,63 @@
+.skills {
+}
+.skills__title {
+}
+
+.skills-tech-title,
+.skills-nontech-title {
+  margin-bottom: 20px;
+  font-weight: 600;
+  font-size: 20px;
+  color: var(--neutral-gray0c0c0c);
+}
+.title {
+}
+.skills__grid {
+  display: grid;
+  grid-template-columns: repeat(2, 48%);
+  justify-content: space-between;
+
+  @include mobile {
+    grid-template-columns: 1fr;
+  }
+
+  div {
+    padding: 30px;
+    border: 1px solid var(--neutral-graycbcbcb);
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 0.0625em 0.0625em,
+      rgba(0, 0, 0, 0.25) 0px 0.125em 0.5em,
+      rgba(255, 255, 255, 0.1) 0px 0px 0px 1px inset;
+    border-radius: 8px;
+  }
+}
+.skills-tech {
+  @include mobile {
+    padding: 20px;
+  }
+}
+.skills__desc {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 10px;
+  font-weight: 500;
+  font-size: 18px;
+  color: var(--neutral-gray404040);
+  @include mobile {
+    margin-bottom: 5px;
+  }
+  @include tablet {
+    margin-bottom: 6px;
+  }
+  &::before {
+    content: "";
+    display: inline-block;
+    min-width: 20px;
+    height: 20px;
+    background-image: url("./../../img/skills/right-arrow.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin-right: 8px;
+  }
+}
+.skills-nontech {
+}

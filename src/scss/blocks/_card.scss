@@ -1,0 +1,114 @@
+.card {
+  position: relative;
+  margin: 0 5px;
+  border-radius: 4px;
+  overflow: hidden;
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px,
+    rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+  @include mobile {
+    height: 100%;
+  }
+}
+
+.card__body {
+  padding: 5.5px 8px;
+  display: grid;
+  gap: 8px;
+  background-color: var(--state-color-success-bg);
+
+  @include mobile {
+    padding: 0 5px;
+    height: 25%;
+    gap: 4px;
+  }
+}
+
+.card__picture {
+  overflow: hidden;
+  height: 277px;
+  @include mobile {
+    height: 75%;
+  }
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    @include mobile {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+    }
+  }
+}
+
+.card__title {
+  margin-top: 5px;
+  font-family: var(--font-family);
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 140%;
+  text-transform: capitalize;
+  color: var(--black);
+
+  @include mobile {
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 110%;
+  }
+
+  a {
+    color: var(--neutral-gray202020);
+  }
+
+  a::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+  }
+}
+.card__cols {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  gap: 12px;
+
+  @include mobile {
+    flex-wrap: wrap;
+  }
+}
+.card__desc {
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 180%;
+  text-transform: capitalize;
+  color: var(--neutral-gray202020);
+
+  @include mobile {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 100%;
+  }
+}
+.card__price {
+  font-family: var(--font-family);
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 180%;
+  text-transform: capitalize;
+  color: var(--neutral-gray202020);
+  text-align: right;
+
+  @include mobile {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 100%;
+  }
+}
+.card__colors {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}

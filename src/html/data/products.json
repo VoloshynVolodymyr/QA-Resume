@@ -1,0 +1,72 @@
+[
+  {
+    "img": "1",
+    "title": "Bootcamp fullstack developer",
+    "desc": "24.03.2023",
+    "price": "GoIT",
+    "colors": ["white", "olive", "green"]
+  },
+  {
+    "img": "2",
+    "title": "QA Technical PRO",
+    "desc": "05.03.2025",
+    "price": "HILLEL",
+    "colors": ["white", "olive", "green"]
+  },
+  {
+    "img": "3",
+    "title": "SQL для початківців",
+    "desc": "10.02.2024",
+    "price": "Udemy",
+    "colors": ["olive", "darkblue", "black"]
+  },
+  {
+    "img": "4",
+    "title": "HTML&CSS starter",
+    "desc": "15/01/2023",
+    "price": "UOC",
+    "colors": ["white", "black", "green"]
+  },
+  {
+    "img": "5",
+    "title": "курс Javascript starter",
+    "desc": "15.01.2023",
+    "price": "UOC",
+    "colors": ["blue", "white", "green"]
+  },
+  {
+    "img": "6",
+    "title": "Курс JavaScript+React",
+    "desc": "18.04.2024",
+    "price": "Udemy",
+    "colors": ["white", "olive", "green"]
+  },
+  {
+    "img": "7",
+    "title": "курс Java starter",
+    "desc": "15.05.2022",
+    "price": "UOC",
+    "colors": ["white", "olive", "green"]
+  },
+  {
+    "img": "8",
+    "title": "Software testing from scratch",
+    "desc": "13.05.2024",
+    "price": "Stepik",
+    "href": "../../../blocks/blocks/page-education/page1.html"
+  },
+  {
+    "img": "9",
+    "title": "Професія Back-end розробник",
+    "desc": "14.09.2023",
+    "price": "ItProger",
+    "colors": ["pink", "olive", "green"]
+  },
+  {
+    "img": "10",
+    "title": "Викладач фізики і інформатики",
+    "desc": "21.06.2002",
+    "price": "КДПУ",
+    "colors": ["white", "olive", "green"]
+  }
+]

@@ -1,0 +1,46 @@
+<section id="education" class="education">
+  <div class="container">
+    <h2 class="education__title title">Освіта</h2>
+
+    <div class="education__cards">
+      <!-- Slider main container -->
+      <div class="swiper">
+        <div class="swiper-wrapper">
+          @@loop('./blocks/card.html', './data/products.json')
+        </div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-pagination"></div>
+      </div>
+    </div>
+  </div>
+
+  <div
+    class="modal"
+    id="myModal"
+    tabindex="-1"
+    aria-labelledby="exampleModalLabel"
+    aria-hidden="true"
+  >
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button
+            type="button"
+            class="btn-close"
+            data-bs-dismiss="modal"
+            aria-label="Close"
+          >
+            <svg class="icon icon--close">
+              <use href="./img/svgsprite/sprite.symbol.svg#close"></use>
+            </svg>
+          </button>
+        </div>
+        <div class="modal-body">
+          <img id="modalImage" src="" alt="Зображення" />
+        </div>
+        <div class="modal-footer"></div>
+      </div>
+    </div>
+  </div>
+</section>

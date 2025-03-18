@@ -1,0 +1,41 @@
+.nav {
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 180%;
+  text-transform: capitalize;
+  text-align: center;
+  color: var(--neutral-gray404040);
+
+  @include tablet {
+    font-size: 16px;
+  }
+
+  @include mobile {
+    font-size: 12px;
+  }
+}
+.nav__list {
+  display: flex;
+  column-gap: 30px;
+
+  @include tablet {
+    column-gap: 15px;
+  }
+
+  @include mobile {
+    display: none;
+    column-gap: 4px;
+  }
+
+  a {
+    color: var(--link-color);
+    font-weight: 500;
+  }
+
+  a.active {
+    color: #000000;
+    font-weight: 500;
+    border-bottom: 1px solid #000000;
+  }
+}
